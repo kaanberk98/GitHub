@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{37AA7980-8DFB-310C-81E8-D9E3D6B4083D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Cube</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\kbb19\Documents\Project\Cube\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Cube.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Cube</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\kbb19\Documents\Project\Cube\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Cube.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Cube</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\kbb19\Documents\Project\Cube\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Cube.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Cube</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\kbb19\Documents\Project\Cube\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Cube.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Cube</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\VTK\build\install\include\vtk-9.1;C:\VTK\build\install\include\vtk-9.1\vtkfreetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;vtkRenderingContext2D_AUTOINIT_INCLUDE="C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";vtkRenderingCore_AUTOINIT_INCLUDE="C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";vtkRenderingOpenGL2_AUTOINIT_INCLUDE="C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;vtkRenderingContext2D_AUTOINIT_INCLUDE=\"C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";vtkRenderingCore_AUTOINIT_INCLUDE=\"C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";vtkRenderingOpenGL2_AUTOINIT_INCLUDE=\"C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\VTK\build\install\include\vtk-9.1;C:\VTK\build\install\include\vtk-9.1\vtkfreetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\VTK\build\install\include\vtk-9.1;C:\VTK\build\install\include\vtk-9.1\vtkfreetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\VTK\build\install\lib\vtkInteractionStyle-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingContextOpenGL2-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingGL2PSOpenGL2-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingOpenGL2-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingContext2D-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingFreeType-9.1d.lib;C:\VTK\build\install\lib\vtkfreetype-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingUI-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingCore-9.1d.lib;C:\VTK\build\install\lib\vtkCommonColor-9.1d.lib;C:\VTK\build\install\lib\vtkFiltersGeneral-9.1d.lib;C:\VTK\build\install\lib\vtkFiltersCore-9.1d.lib;C:\VTK\build\install\lib\vtkCommonExecutionModel-9.1d.lib;C:\VTK\build\install\lib\vtkCommonDataModel-9.1d.lib;C:\VTK\build\install\lib\vtkCommonTransforms-9.1d.lib;C:\VTK\build\install\lib\vtkCommonMisc-9.1d.lib;C:\VTK\build\install\lib\vtkglew-9.1d.lib;opengl32.lib;C:\VTK\build\install\lib\vtkCommonMath-9.1d.lib;C:\VTK\build\install\lib\vtkCommonCore-9.1d.lib;C:\VTK\build\install\lib\vtksys-9.1d.lib;ws2_32.lib;dbghelp.lib;psapi.lib;C:\VTK\build\install\lib\vtkkissfft-9.1d.lib;C:\VTK\build\install\lib\vtkzlib-9.1d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/kbb19/Documents/Project/Cube/build/Debug/Cube.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/kbb19/Documents/Project/Cube/build/Debug/Cube.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\VTK\build\install\include\vtk-9.1;C:\VTK\build\install\include\vtk-9.1\vtkfreetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;vtkRenderingContext2D_AUTOINIT_INCLUDE="C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";vtkRenderingCore_AUTOINIT_INCLUDE="C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";vtkRenderingOpenGL2_AUTOINIT_INCLUDE="C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;vtkRenderingContext2D_AUTOINIT_INCLUDE=\"C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";vtkRenderingCore_AUTOINIT_INCLUDE=\"C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";vtkRenderingOpenGL2_AUTOINIT_INCLUDE=\"C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\VTK\build\install\include\vtk-9.1;C:\VTK\build\install\include\vtk-9.1\vtkfreetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\VTK\build\install\include\vtk-9.1;C:\VTK\build\install\include\vtk-9.1\vtkfreetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\VTK\build\install\lib\vtkInteractionStyle-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingContextOpenGL2-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingGL2PSOpenGL2-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingOpenGL2-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingContext2D-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingFreeType-9.1d.lib;C:\VTK\build\install\lib\vtkfreetype-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingUI-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingCore-9.1d.lib;C:\VTK\build\install\lib\vtkCommonColor-9.1d.lib;C:\VTK\build\install\lib\vtkFiltersGeneral-9.1d.lib;C:\VTK\build\install\lib\vtkFiltersCore-9.1d.lib;C:\VTK\build\install\lib\vtkCommonExecutionModel-9.1d.lib;C:\VTK\build\install\lib\vtkCommonDataModel-9.1d.lib;C:\VTK\build\install\lib\vtkCommonTransforms-9.1d.lib;C:\VTK\build\install\lib\vtkCommonMisc-9.1d.lib;C:\VTK\build\install\lib\vtkglew-9.1d.lib;opengl32.lib;C:\VTK\build\install\lib\vtkCommonMath-9.1d.lib;C:\VTK\build\install\lib\vtkCommonCore-9.1d.lib;C:\VTK\build\install\lib\vtksys-9.1d.lib;ws2_32.lib;dbghelp.lib;psapi.lib;C:\VTK\build\install\lib\vtkkissfft-9.1d.lib;C:\VTK\build\install\lib\vtkzlib-9.1d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/kbb19/Documents/Project/Cube/build/Release/Cube.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/kbb19/Documents/Project/Cube/build/Release/Cube.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\VTK\build\install\include\vtk-9.1;C:\VTK\build\install\include\vtk-9.1\vtkfreetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;vtkRenderingContext2D_AUTOINIT_INCLUDE="C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";vtkRenderingCore_AUTOINIT_INCLUDE="C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";vtkRenderingOpenGL2_AUTOINIT_INCLUDE="C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;vtkRenderingContext2D_AUTOINIT_INCLUDE=\"C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";vtkRenderingCore_AUTOINIT_INCLUDE=\"C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";vtkRenderingOpenGL2_AUTOINIT_INCLUDE=\"C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\VTK\build\install\include\vtk-9.1;C:\VTK\build\install\include\vtk-9.1\vtkfreetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\VTK\build\install\include\vtk-9.1;C:\VTK\build\install\include\vtk-9.1\vtkfreetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\VTK\build\install\lib\vtkInteractionStyle-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingContextOpenGL2-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingGL2PSOpenGL2-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingOpenGL2-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingContext2D-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingFreeType-9.1d.lib;C:\VTK\build\install\lib\vtkfreetype-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingUI-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingCore-9.1d.lib;C:\VTK\build\install\lib\vtkCommonColor-9.1d.lib;C:\VTK\build\install\lib\vtkFiltersGeneral-9.1d.lib;C:\VTK\build\install\lib\vtkFiltersCore-9.1d.lib;C:\VTK\build\install\lib\vtkCommonExecutionModel-9.1d.lib;C:\VTK\build\install\lib\vtkCommonDataModel-9.1d.lib;C:\VTK\build\install\lib\vtkCommonTransforms-9.1d.lib;C:\VTK\build\install\lib\vtkCommonMisc-9.1d.lib;C:\VTK\build\install\lib\vtkglew-9.1d.lib;opengl32.lib;C:\VTK\build\install\lib\vtkCommonMath-9.1d.lib;C:\VTK\build\install\lib\vtkCommonCore-9.1d.lib;C:\VTK\build\install\lib\vtksys-9.1d.lib;ws2_32.lib;dbghelp.lib;psapi.lib;C:\VTK\build\install\lib\vtkkissfft-9.1d.lib;C:\VTK\build\install\lib\vtkzlib-9.1d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/kbb19/Documents/Project/Cube/build/MinSizeRel/Cube.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/kbb19/Documents/Project/Cube/build/MinSizeRel/Cube.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\VTK\build\install\include\vtk-9.1;C:\VTK\build\install\include\vtk-9.1\vtkfreetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;vtkRenderingContext2D_AUTOINIT_INCLUDE="C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";vtkRenderingCore_AUTOINIT_INCLUDE="C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";vtkRenderingOpenGL2_AUTOINIT_INCLUDE="C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;vtkRenderingContext2D_AUTOINIT_INCLUDE=\"C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";vtkRenderingCore_AUTOINIT_INCLUDE=\"C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";vtkRenderingOpenGL2_AUTOINIT_INCLUDE=\"C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\VTK\build\install\include\vtk-9.1;C:\VTK\build\install\include\vtk-9.1\vtkfreetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\VTK\build\install\include\vtk-9.1;C:\VTK\build\install\include\vtk-9.1\vtkfreetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\VTK\build\install\lib\vtkInteractionStyle-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingContextOpenGL2-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingGL2PSOpenGL2-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingOpenGL2-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingContext2D-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingFreeType-9.1d.lib;C:\VTK\build\install\lib\vtkfreetype-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingUI-9.1d.lib;C:\VTK\build\install\lib\vtkRenderingCore-9.1d.lib;C:\VTK\build\install\lib\vtkCommonColor-9.1d.lib;C:\VTK\build\install\lib\vtkFiltersGeneral-9.1d.lib;C:\VTK\build\install\lib\vtkFiltersCore-9.1d.lib;C:\VTK\build\install\lib\vtkCommonExecutionModel-9.1d.lib;C:\VTK\build\install\lib\vtkCommonDataModel-9.1d.lib;C:\VTK\build\install\lib\vtkCommonTransforms-9.1d.lib;C:\VTK\build\install\lib\vtkCommonMisc-9.1d.lib;C:\VTK\build\install\lib\vtkglew-9.1d.lib;opengl32.lib;C:\VTK\build\install\lib\vtkCommonMath-9.1d.lib;C:\VTK\build\install\lib\vtkCommonCore-9.1d.lib;C:\VTK\build\install\lib\vtksys-9.1d.lib;ws2_32.lib;dbghelp.lib;psapi.lib;C:\VTK\build\install\lib\vtkkissfft-9.1d.lib;C:\VTK\build\install\lib\vtkzlib-9.1d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/kbb19/Documents/Project/Cube/build/RelWithDebInfo/Cube.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/kbb19/Documents/Project/Cube/build/RelWithDebInfo/Cube.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\kbb19\Documents\Project\Cube\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/kbb19/Documents/Project/Cube/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\bin\cmake.exe" -SC:/Users/kbb19/Documents/Project/Cube -BC:/Users/kbb19/Documents/Project/Cube/build --check-stamp-file C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckCCompilerFlag.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckCXXCompilerFlag.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckCXXSourceCompiles.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckIncludeFile.c.in;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\ExternalData.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\FindThreads.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\GenerateExportHeader.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Internal\CheckCompilerFlag.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\3.23.0-rc2\CMakeCCompiler.cmake;C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\3.23.0-rc2\CMakeCXXCompiler.cmake;C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\3.23.0-rc2\CMakeRCCompiler.cmake;C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\3.23.0-rc2\CMakeSystem.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\VTK-targets-debug.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\VTK-targets.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\VTK-vtk-module-find-packages.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\VTK-vtk-module-properties.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\patches\99\FindOpenGL.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtk-config-version.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtk-config.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtk-prefix.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkCMakeBackports.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkEncodeString.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkHashSource.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkModule.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkModuleJson.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkModuleTesting.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkObjectFactory.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkTopologicalSort.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/kbb19/Documents/Project/Cube/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\bin\cmake.exe" -SC:/Users/kbb19/Documents/Project/Cube -BC:/Users/kbb19/Documents/Project/Cube/build --check-stamp-file C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckCCompilerFlag.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckCXXCompilerFlag.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckCXXSourceCompiles.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckIncludeFile.c.in;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\ExternalData.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\FindThreads.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\GenerateExportHeader.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Internal\CheckCompilerFlag.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\3.23.0-rc2\CMakeCCompiler.cmake;C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\3.23.0-rc2\CMakeCXXCompiler.cmake;C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\3.23.0-rc2\CMakeRCCompiler.cmake;C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\3.23.0-rc2\CMakeSystem.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\VTK-targets-debug.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\VTK-targets.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\VTK-vtk-module-find-packages.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\VTK-vtk-module-properties.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\patches\99\FindOpenGL.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtk-config-version.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtk-config.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtk-prefix.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkCMakeBackports.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkEncodeString.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkHashSource.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkModule.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkModuleJson.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkModuleTesting.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkObjectFactory.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkTopologicalSort.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/kbb19/Documents/Project/Cube/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\bin\cmake.exe" -SC:/Users/kbb19/Documents/Project/Cube -BC:/Users/kbb19/Documents/Project/Cube/build --check-stamp-file C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckCCompilerFlag.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckCXXCompilerFlag.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckCXXSourceCompiles.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckIncludeFile.c.in;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\ExternalData.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\FindThreads.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\GenerateExportHeader.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Internal\CheckCompilerFlag.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\3.23.0-rc2\CMakeCCompiler.cmake;C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\3.23.0-rc2\CMakeCXXCompiler.cmake;C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\3.23.0-rc2\CMakeRCCompiler.cmake;C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\3.23.0-rc2\CMakeSystem.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\VTK-targets-debug.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\VTK-targets.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\VTK-vtk-module-find-packages.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\VTK-vtk-module-properties.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\patches\99\FindOpenGL.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtk-config-version.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtk-config.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtk-prefix.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkCMakeBackports.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkEncodeString.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkHashSource.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkModule.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkModuleJson.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkModuleTesting.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkObjectFactory.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkTopologicalSort.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/kbb19/Documents/Project/Cube/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\bin\cmake.exe" -SC:/Users/kbb19/Documents/Project/Cube -BC:/Users/kbb19/Documents/Project/Cube/build --check-stamp-file C:/Users/kbb19/Documents/Project/Cube/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckCCompilerFlag.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckCXXCompilerFlag.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckCXXSourceCompiles.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckIncludeFile.c.in;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\ExternalData.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\FindThreads.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\GenerateExportHeader.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Internal\CheckCompilerFlag.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Users\Kaan Berk BİLGİN\Desktop\İŞ\cmake-3.23.0-rc2-windows-x86_64\cmake-3.23.0-rc2-windows-x86_64\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\3.23.0-rc2\CMakeCCompiler.cmake;C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\3.23.0-rc2\CMakeCXXCompiler.cmake;C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\3.23.0-rc2\CMakeRCCompiler.cmake;C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\3.23.0-rc2\CMakeSystem.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\VTK-targets-debug.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\VTK-targets.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\VTK-vtk-module-find-packages.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\VTK-vtk-module-properties.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\patches\99\FindOpenGL.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtk-config-version.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtk-config.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtk-prefix.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkCMakeBackports.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkEncodeString.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkHashSource.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkModule.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkModuleJson.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkModuleTesting.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkObjectFactory.cmake;C:\VTK\build\install\lib\cmake\vtk-9.1\vtkTopologicalSort.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\kbb19\Documents\Project\Cube\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\kbb19\Documents\Project\Cube\Cube.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\kbb19\Documents\Project\Cube\build\ZERO_CHECK.vcxproj">
+      <Project>{B702D72A-A847-322F-AB76-59B7D4D6C892}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
